@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 import net.wootrix.modavecyann.ModAvecYann;
+import net.wootrix.modavecyann.block.ModBlock;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -23,6 +24,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
                         pOutput.accept(Items.DIAMOND);
+
+                        pOutput.accept(ModBlock.SAPPHIRE_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

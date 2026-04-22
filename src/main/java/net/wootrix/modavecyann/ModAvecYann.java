@@ -1,6 +1,7 @@
 package net.wootrix.modavecyann;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.resources.model.ModelBaker;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.wootrix.modavecyann.block.ModBlock;
 import net.wootrix.modavecyann.item.ModCreativeModTabs;
 import net.wootrix.modavecyann.item.ModItems;
 import org.slf4j.Logger;
@@ -33,6 +35,7 @@ public class ModAvecYann
 
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -70,4 +73,3 @@ public class ModAvecYann
         }
     }
 }
-123
