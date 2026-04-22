@@ -1,4 +1,4 @@
-package net.WootrixYann.modavecyann;
+package net.wootrix.modavecyann;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,7 +32,6 @@ public class ModAvecYann
 
         modEventBus.addListener(this::addCreative);
 
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
