@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "modavecyann:sapphire"
+    }
+  },
+  "result": {
+    "item": "modavecyann:sapphire_block"
+  }
+}

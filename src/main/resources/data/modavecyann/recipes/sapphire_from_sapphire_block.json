@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "modavecyann:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "modavecyann:sapphire",
+    "count": 9
+  }
+}
